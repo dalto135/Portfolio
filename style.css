@@ -75,7 +75,7 @@ a {
 #image {
     display: flex;
     justify-content: flex-end;
-    background-image: url("solarpunk.png");
+    background-image: url("images/solarpunk.png");
 }
 
 #image h1 {
@@ -163,24 +163,24 @@ footer a {
 }
 /* Placeholder images for future projects */
 #wow {
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/000/561/903/large/derek-weselake-backda.jpg?1426830042");
+    background-image: url("images/derek-weselake-backda.jpg");
 }
 
 
 #project {
-    background-image: url("https://www.abc.net.au/reslib/201105/r775562_6639716.jpg");
+    background-image: url("images/r775562_6639716.jpg");
 }
 
 #code {
-    background-image: url("https://thumbs.dreamstime.com/z/super-trees-gardens-bay-singapore-105551731.jpg");
+    background-image: url("images/super-trees-gardens-bay-singapore-105551731.jpg");
 }
 
 #pollution {
-    background-image: url("https://i.pinimg.com/originals/7f/1e/0d/7f1e0d2ac3bd87d6f57f73492d3bf6d1.jpg");
+    background-image: url("images/7f1e0d2ac3bd87d6f57f73492d3bf6d1.jpg");
 }
 
 #spicy {
-    background-image: url("https://i.pinimg.com/originals/10/33/b7/1033b72b0d4c935ac1151d8cecddac8e.jpg");
+    background-image: url("images/1033b72b0d4c935ac1151d8cecddac8e.jpg");
 }
 
 a {

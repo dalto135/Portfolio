@@ -7,16 +7,20 @@
     font-weight: normal;
     color: black;
 }
+
 /* Color variables defined */
 :root {
-    --mint: rgb(0, 200, 100);
-    --cloudy: rgba(255, 255, 255, 0.5);
+    --grey: rgb(32, 32, 40);
     --blue: rgb(0, 0, 64);
     --teal: rgb(0, 80, 80);
+    --green: rgb(0, 128, 64);
+    --mint: rgb(0, 192, 96);
+    --cloudy: rgba(255, 255, 255, 0.5);
 }
+
 /* Sets initial parameters around each type of tag used in the html doc */
 html {
-    background-color: rgb(34, 42, 46);
+    background-color: var(--grey);
 }
 
 body {
@@ -36,7 +40,7 @@ section {
 div,
 address {
     align-items: center;
-    border-color: green;
+    border-color: var(--green);
     flex: 1 1;
 }
 
@@ -74,18 +78,20 @@ a {
     background-color: var(--cloudy);
     font-size: 18pt;
 }
+
+.small a {
+    font-size: 24pt;
+}
+
 /* Places a gradient image on link elements when they are hovered over with the cursor */
 a:hover {
     color: white;
     background-image: linear-gradient(var(--mint),
             var(--blue));
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 
-h2 a {
-    position: relative;
-    /* bottom: 3px; */
-}
+
 
 /* Specifies text attributes and layout for individual elements */
 #image {
@@ -133,8 +139,9 @@ h2 a {
 #name h1 {
     font-size: 4vw;
     border-color: var(--mint);
-    color: green;
+    color: var(--green);
     background-color: var(--blue);
+    text-shadow: 2px 2px 2px black;
 }
 
 #shortcuts {
@@ -144,11 +151,13 @@ h2 a {
     flex: 2 2;
 }
 
-.big, .small {
+.big,
+.small {
     border-color: var(--mint);
     display: flex;
     flex-wrap: wrap;
 }
+
 /* Placeholder images for future projects */
 #wow {
     background-image: url("images/36375566_1950022561967371_1912403655345045504_o.jpg");
@@ -170,38 +179,54 @@ h2 a {
     background-image: url("images/1033b72b0d4c935ac1151d8cecddac8e.jpg");
 }
 
-#me, footer a {
+#me,
+footer a {
     flex: 1 1;
 }
 
 /* Organization of elements changes at varying screen widths */
 @media screen and (max-width: 980px) {
-    header, section, #work {
+
+    header,
+    section,
+    #work {
         display: block;
     }
+
     #name {
         text-align: center;
     }
+
     #shortcuts {
         justify-content: center;
     }
+
     .title {
         text-align: left;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .content, .big, address {
+
+    .content,
+    .big,
+    address {
         display: block;
+    }
+
+    .small a {
+        font-size: 18pt;
     }
 
     address a {
         display: block;
     }
 
-    #image, #work h2 {
+    #image,
+    #work h2 {
         justify-content: center;
     }
+
     #work .small h2 {
         height: 150px;
     }

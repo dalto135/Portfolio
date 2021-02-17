@@ -1,9 +1,12 @@
 /* Creates a thin border and even spacing around every element */
 * {
     border: 2px solid black;
+    border-radius: 10px;
     margin: 4px;
     padding: 4px;
     font-family: eurostile, sans-serif;
+    /* font-weight: lighter; */
+    /* font-family: futura, sans-serif; */
     font-weight: normal;
     color: black;
 }
@@ -16,25 +19,39 @@
     --green: rgb(0, 128, 64);
     --mint: rgb(0, 192, 96);
     --cloudy: rgba(255, 255, 255, 0.5);
+    --pastelGreen: rgba(144, 223, 160, 0.75);
+    --pastelBlue: rgba(130, 185, 252, 0.75);
 }
 
 /* Sets initial parameters around each type of tag used in the html doc */
 html {
     background-color: var(--grey);
+    border-width: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    border-color: var(--blue);
+    /* border-color: var(--blue); */
+    border-width: 0;
+    margin: 0;
+    /* padding: 0; */
 }
 
 header {
     display: flex;
     border-color: var(--teal);
+    border-width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 section {
     display: flex;
     border-color: var(--teal);
+    border-width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 div,
@@ -47,6 +64,9 @@ address {
 footer {
     border-color: var(--teal);
     text-align: center;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 address {
@@ -61,7 +81,8 @@ footer {
 
 h1 {
     font-size: 24pt;
-    background-color: var(--mint);
+    background-color: var(--pastelGreen);
+    /* background: var(--mint); */
 }
 
 h2 {
@@ -100,6 +121,10 @@ a:hover {
     align-items: flex-end;
     background-image: url("images/solarpunk.png");
     height: 150px;
+    border-color: black;
+    border-width: 2px;
+    margin: 4px;
+    padding: 4px;
 }
 
 #image h1 {
@@ -109,10 +134,25 @@ a:hover {
 .title {
     flex: 0.3 0.3;
     text-align: right;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .title h1 {
     font-size: 4vw;
+}
+
+.content {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#work {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #work h2 {
@@ -132,16 +172,20 @@ a:hover {
 }
 
 #name {
+    border-width: 0;
+    margin: 0;
+    padding: 0;
     text-align: right;
     flex: 1 1;
 }
 
 #name h1 {
     font-size: 4vw;
-    border-color: var(--mint);
-    color: var(--green);
-    background-color: var(--blue);
-    text-shadow: 2px 2px 2px black;
+    /* border-color: var(--mint); */
+    border-color: black;
+    /* color: var(--green); */
+    background-color: var(--pastelBlue);
+    /* text-shadow: 2px 2px 2px black; */
 }
 
 #shortcuts {
@@ -149,11 +193,33 @@ a:hover {
     justify-content: flex-end;
     flex-wrap: wrap;
     flex: 2 2;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#shortcuts a {
+    /* position: absolute; */
+}
+
+#me {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#me p {
+    /* background: none;
+    color: var(--cloudy);
+    border-color: var(--cloudy); */
 }
 
 .big,
 .small {
-    border-color: var(--mint);
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    /* border-color: var(--mint); */
     display: flex;
     flex-wrap: wrap;
 }
@@ -208,18 +274,22 @@ footer a {
 
 @media screen and (max-width: 768px) {
 
-    .content,
-    .big,
-    address {
+    .big {
         display: block;
+    }
+
+    .content, address {
+        /* display: block; */
     }
 
     .small a {
         font-size: 18pt;
     }
 
-    address a {
-        display: block;
+    address a, .content a {
+        /* display: block; */
+        justify-content: flex-start;
+        flex-direction: column;
     }
 
     #image,

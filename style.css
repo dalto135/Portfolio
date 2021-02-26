@@ -5,8 +5,6 @@
     margin: 4px;
     padding: 4px;
     font-family: eurostile, sans-serif;
-    /* font-weight: lighter; */
-    /* font-family: futura, sans-serif; */
     font-weight: normal;
     color: black;
 }
@@ -18,14 +16,13 @@
     --teal: rgb(0, 80, 80);
     --green: rgb(0, 128, 64);
     --mint: rgb(0, 192, 96);
+    --red: rgb(128, 0, 64);
+
     --cloudy: rgba(255, 255, 255, 0.5);
     --pastelGreen: rgba(144, 223, 160, 0.75);
-    /* --pastelGreen: rgba(128, 207, 160, 0.75); */
-
     --pastelBlue: rgba(128, 186, 255, 0.75);
     --pastelRed: rgba(223, 144, 174, 0.75);
     --pastelTeal: rgba(128, 206, 206, 0.75);
-    --red: rgb(128, 0, 64);
 }
 
 /* Sets initial parameters around each type of tag used in the html doc */
@@ -38,25 +35,16 @@ html {
 
 body {
     border-color: var(--blue);
-    /* border-width: 0;
-    margin: 0; */
-    /* padding: 0; */
 }
 
 header {
     display: flex;
     border-color: var(--teal);
-    /* border-width: 0;
-    padding: 0;
-    margin: 0; */
 }
 
 section {
     display: flex;
-    border-color: var(--teal);
-    /* border-width: 0;
-    padding: 0;
-    margin: 0; */
+    border-color: var(--green);
 }
 
 div,
@@ -87,7 +75,6 @@ footer {
 h1 {
     font-size: 24pt;
     background-color: var(--pastelGreen);
-    /* background: var(--mint); */
 }
 
 h2 {
@@ -150,9 +137,9 @@ a:hover {
 }
 
 .content {
-    /* border-width: 0;
+    border-width: 0;
     padding: 0;
-    margin: 0; */
+    margin: 0;
 }
 
 #work {
@@ -199,9 +186,9 @@ a:hover {
     justify-content: flex-end;
     flex-wrap: wrap;
     flex: 2 2;
-    /* border-width: 0;
+    border-width: 0;
     padding: 0;
-    margin: 0; */
+    margin: 0;
 }
 
 #shortcuts a {

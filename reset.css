@@ -1,10 +1,11 @@
 * {
     border: 2px solid black;
-    border-radius: 10px;
     margin: 4px;
     padding: 4px;
+    border-radius: 10px;
     text-align: center;
     font-family: eurostile, Helvetica, Arial, sans-serif;
+    font-weight: normal;
 }
 
 :root {
@@ -21,6 +22,9 @@
 
 html {
     background: var(--grey);
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {

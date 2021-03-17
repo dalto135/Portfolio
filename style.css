@@ -243,6 +243,15 @@ footer a {
     flex: 1 1;
 }
 
+#wow {
+    border-color: black;
+}
+
+#wow img {
+    max-width: 100%;
+    padding: 0;
+}
+
 /* Organization of elements changes at varying screen widths */
 @media screen and (max-width: 980px) {
 

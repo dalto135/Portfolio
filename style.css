@@ -162,15 +162,6 @@ a:hover {
     align-items: flex-end;
 }
 
-/* Differentiates the first projects from the others with a substantial height difference */
-#work .small h2 {
-    height: 300px;
-}
-
-#work .big h2 {
-    height: 150px;
-}
-
 #name {
     border-width: 0;
     margin: 0;
@@ -214,9 +205,8 @@ a:hover {
     border-color: var(--cloudy); */
 }
 
-.big,
-.small {
-    border-width: 0;
+.big {
+    border: 0;
     margin: 0;
     padding: 0;
     /* border-color: var(--mint); */
@@ -265,11 +255,13 @@ img:hover {
     box-shadow: 2px 2px 2px black;
 }
 
-.small {
+.small, #project, #code {
     justify-content: flex-end;
     border: 2px solid black;
     margin: 4px;
     padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .small img, #project img, #code img {
@@ -277,6 +269,19 @@ img:hover {
     flex: 1 1;
     padding: 0;
     margin: 0;
+}
+
+.big div {
+    height: 100%;
+    border-color: black;
+}
+
+#code {
+    height: 100%;
+}
+
+#project a, #code a {
+    font-size: 16pt;
 }
 
 /* Organization of elements changes at varying screen widths */
@@ -312,7 +317,7 @@ img:hover {
     }
 
     .small a {
-        font-size: 18pt;
+        font-size: 16pt;
     }
 
     address a, .content a {
@@ -322,7 +327,7 @@ img:hover {
     }
 
     #image,
-    #work h2, .small {
+    #work h2, .small, #project, #code {
         justify-content: center;
     }
 

@@ -104,6 +104,13 @@ a:hover {
     text-shadow: 2px 2px 2px black;
 }
 
+/* .github:hover {
+    color: white;
+    background-image: linear-gradient(var(--mint),
+            var(--blue));
+    text-shadow: 2px 2px 2px black;
+} */
+
 
 
 /* Specifies text attributes and layout for individual elements */
@@ -218,7 +225,7 @@ a:hover {
 }
 
 /* Placeholder images for future projects */
-#wow {
+.small {
     background-image: url("images/36375566_1950022561967371_1912403655345045504_o.jpg");
 }
 
@@ -243,13 +250,33 @@ footer a {
     flex: 1 1;
 }
 
-#wow {
+.small div {
     border-color: black;
 }
 
-#wow img {
-    max-width: 100%;
+.project {
+    border: 0;
     padding: 0;
+    display: flex;
+}
+
+img:hover {
+    border-color: var(--pastelGreen);
+    box-shadow: 2px 2px 2px black;
+}
+
+.small {
+    justify-content: flex-end;
+    border: 2px solid black;
+    margin: 4px;
+    padding: 4px;
+}
+
+.small img, #project img, #code img {
+    max-width: 100%;
+    flex: 1 1;
+    padding: 0;
+    margin: 0;
 }
 
 /* Organization of elements changes at varying screen widths */
@@ -295,11 +322,11 @@ footer a {
     }
 
     #image,
-    #work h2 {
+    #work h2, .small {
         justify-content: center;
     }
 
-    #work .small h2 {
-        height: 150px;
+    #image h1 {
+        font-size: 18pt;
     }
 }

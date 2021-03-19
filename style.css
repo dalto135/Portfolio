@@ -104,15 +104,6 @@ a:hover {
     text-shadow: 2px 2px 2px black;
 }
 
-/* .github:hover {
-    color: white;
-    background-image: linear-gradient(var(--mint),
-            var(--blue));
-    text-shadow: 2px 2px 2px black;
-} */
-
-
-
 /* Specifies text attributes and layout for individual elements */
 #image {
     display: flex;
@@ -171,11 +162,8 @@ a:hover {
 
 #name h1 {
     font-size: 4vw;
-    /* border-color: var(--mint); */
     border-color: black;
-    /* color: var(--green); */
     background-color: var(--pastelBlue);
-    /* text-shadow: 2px 2px 2px black; */
 }
 
 #shortcuts {
@@ -188,33 +176,22 @@ a:hover {
     margin: 0;
 }
 
-#shortcuts a {
-    /* position: absolute; */
-}
-
 #me {
     border-width: 0;
     padding: 0;
     margin: 0;
 }
 
-#me p {
-    /* background: none;
-    color: var(--cloudy);
-    border-color: var(--cloudy); */
-}
-
 .big {
     border: 0;
     margin: 0;
     padding: 0;
-    /* border-color: var(--mint); */
     display: flex;
     flex-wrap: wrap;
 }
 
 /* Placeholder images for future projects */
-.small {
+#wow {
     background-image: url("images/36375566_1950022561967371_1912403655345045504_o.jpg");
 }
 
@@ -239,10 +216,6 @@ footer a {
     flex: 1 1;
 }
 
-.small div {
-    border-color: black;
-}
-
 .project {
     border: 0;
     padding: 0;
@@ -254,7 +227,7 @@ img:hover {
     box-shadow: 2px 2px 2px black;
 }
 
-.small, #project, #code {
+.small {
     justify-content: flex-end;
     border: 2px solid black;
     margin: 4px;
@@ -263,23 +236,14 @@ img:hover {
     flex-wrap: wrap;
 }
 
-.small img, #project img, #code img {
+.small img {
     max-width: 100%;
     flex: 1 1;
     padding: 0;
     margin: 0;
 }
 
-.big div {
-    height: 100%;
-    border-color: black;
-}
-
-#code {
-    height: 100%;
-}
-
-#project a, #code a {
+.big a {
     font-size: 16pt;
 }
 
@@ -311,26 +275,23 @@ img:hover {
         display: block;
     }
 
-    .content, address {
-        /* display: block; */
-    }
-
-    .small a {
+    a, .small a {
         font-size: 16pt;
     }
 
-    address a, .content a {
-        /* display: block; */
-        justify-content: flex-start;
+    #contact-me .content {
         flex-direction: column;
     }
 
-    #image,
-    #work h2, .small, #project, #code {
+    #image, .small {
         justify-content: center;
     }
 
     #image h1 {
         font-size: 18pt;
+    }
+
+    .title {
+        text-align: center;
     }
 }

@@ -128,7 +128,6 @@ a:hover {
 
 #image h1 {
     background-color: var(--cloudy);
-    /* background-color: var(--pastelBlue); */
 }
 
 .title {
@@ -251,7 +250,7 @@ footer a {
 }
 
 img:hover {
-    border-color: var(--pastelGreen);
+    border-color: rgb(144, 223, 160);
     box-shadow: 2px 2px 2px black;
 }
 

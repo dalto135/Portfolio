@@ -106,15 +106,11 @@ a:hover {
 
 /* Specifies text attributes and layout for individual elements */
 #image {
-    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url("images/solarpunk.png");
+    background-image: url("../images/solarpunk.png");
     height: 150px;
     border-color: black;
-    border-width: 2px;
-    margin: 4px;
-    padding: 4px;
 }
 
 #image h1 {
@@ -192,23 +188,23 @@ a:hover {
 
 /* Placeholder images for future projects */
 #wow {
-    background-image: url("images/36375566_1950022561967371_1912403655345045504_o.jpg");
+    background-image: url("../images/36375566_1950022561967371_1912403655345045504_o.jpg");
 }
 
 #project {
-    background-image: url("images/r775562_6639716.jpg");
+    background-image: url("../images/r775562_6639716.jpg");
 }
 
 #code {
-    background-image: url("images/super-trees-gardens-bay-singapore-105551731.jpg");
+    background-image: url("../images/super-trees-gardens-bay-singapore-105551731.jpg");
 }
 
 #pollution {
-    background-image: url("images/7f1e0d2ac3bd87d6f57f73492d3bf6d1.jpg");
+    background-image: url("../images/7f1e0d2ac3bd87d6f57f73492d3bf6d1.jpg");
 }
 
 #spicy {
-    background-image: url("images/1033b72b0d4c935ac1151d8cecddac8e.jpg");
+    background-image: url("../images/1033b72b0d4c935ac1151d8cecddac8e.jpg");
 }
 
 #me,
@@ -266,6 +262,10 @@ img:hover {
 
     .title {
         text-align: left;
+    }
+    
+    #image {
+        display: flex;
     }
 }
 

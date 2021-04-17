@@ -20,8 +20,8 @@ HTML and CSS
 A portfolio website designed to both provide my personal information and demonstrate various skills using html and css. For the displayed work, I have the first group project completed in the bootcamp as well as two exemplary homework assignments. Links to the git pages and github sites are available in this section.
 
 ## Screenshots
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/screenshot2.png)
+![Screenshot 1](assets/images/screenshot1.png)
+![Screenshot 2](assets/images/screenshot2.png)
 
 ## License
 MIT

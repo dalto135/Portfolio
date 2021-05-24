@@ -129,6 +129,18 @@ a:hover {
     font-size: 4vw;
 }
 
+.title img {
+    width: 100%;
+    max-width: 300px;
+    /* border: none; */
+    padding: 0px;
+}
+
+ .title img:hover {
+    border-color: black;
+    box-shadow: none;
+}
+
 .content {
     border-width: 0;
     padding: 0;
@@ -260,8 +272,19 @@ img:hover {
         justify-content: center;
     }
 
+    /* .title h1 {
+        text-align: left;
+    }
+
+    .title img {
+        justify-content: center;
+    } */
     .title {
         text-align: left;
+    }
+
+    .title img {
+        text-align: center;
     }
     
     #image {
@@ -294,4 +317,12 @@ img:hover {
     .title {
         text-align: center;
     }
+
+    /* .title h1 {
+        text-align: center;
+    }
+
+    .title img {
+        text-align: center;
+    } */
 }

@@ -132,7 +132,6 @@ a:hover {
 .title img {
     width: 100%;
     max-width: 300px;
-    /* border: none; */
     padding: 0px;
 }
 
@@ -200,15 +199,18 @@ a:hover {
 
 /* Placeholder images for future projects */
 #wow {
-    background-image: url("../images/36375566_1950022561967371_1912403655345045504_o.jpg");
+    /* background-image: url("../images/abstract1.jpg"); */
+    background-color: rgb(40, 48, 64);
 }
 
 #project {
-    background-image: url("../images/r775562_6639716.jpg");
+    /* background-image: url("../images/abstract2.jpg"); */
+    background-color: rgb(40, 48, 64);
 }
 
 #code {
-    background-image: url("../images/super-trees-gardens-bay-singapore-105551731.jpg");
+    /* background-image: url("../images/abstract3.jpg"); */
+    background-color: rgb(40, 48, 64);
 }
 
 #pollution {

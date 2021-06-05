@@ -99,8 +99,9 @@ a {
 /* Places a gradient image on link elements when they are hovered over with the cursor */
 a:hover {
     color: white;
-    background-image: linear-gradient(var(--mint),
-            var(--blue));
+    background-image: linear-gradient(var(--mint), var(--blue));
+    /* border-color: rgb(144, 223, 160); */
+    /* background-color: rgba(255, 255, 255, 0.125); */
     text-shadow: 2px 2px 2px black;
 }
 

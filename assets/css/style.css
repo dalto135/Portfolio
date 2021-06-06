@@ -253,6 +253,14 @@ a img:hover {
     margin: 0px 3px 6px 3px;
 }
 
+header {
+    display: block;
+}
+
+#name {
+    text-align: center;
+}
+
 /* Organization of elements changes at varying screen widths */
 @media screen and (max-width: 980px) {
 
@@ -262,9 +270,7 @@ a img:hover {
         display: block;
     }
 
-    #name {
-        text-align: center;
-    }
+    
 
     #shortcuts {
         justify-content: center;

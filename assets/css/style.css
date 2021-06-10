@@ -148,6 +148,10 @@ a:hover {
     justify-content: center;
 }
 
+#headshot {
+    max-width: 100%;
+}
+
 #shortcuts {
     display: flex;
     justify-content: center;

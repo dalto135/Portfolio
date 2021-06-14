@@ -225,10 +225,10 @@ a img:hover {
     background-color: rgb(40, 48, 64);
 }
 
-#employee-tracker img {
+/* #employee-tracker img {
     margin: 0px 3px;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
 .small img {
     max-width: 100%;
@@ -266,7 +266,7 @@ header {
 }
 
 /* Organization of elements changes at varying screen widths */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
 
     header,
     section,
@@ -299,7 +299,7 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 
     .big {
         display: block;
